@@ -9,3 +9,13 @@ Our original text data was obtained from Tencent AI Lab, which contains 25,184 n
 As for the others, we first extracted the top 50 keywords in the data of each novel style. The text extracted by keywords in the target style data is mixed with randomly extracted text from the non-target data to form 100,000 data texts for each style. Then we give these 100,000 pieces of data to professional annotators to annotate, and each piece of data is judged by them whether it is the target style or not.
 
 Finally, our data includes not only the manual annotation results, but also the original target style data text in order to ensure the robustness of the data. The size of the number of the four styles of data and their distribution are shown in the Table\ref{datasets}. Our data are publicly available at https://drive.google.com/file/d/1wKDxO4lBRLlo1Zj7IM6fzZ77zJ5yJoRz/view?usp=share_link.
+
+
+最近的中文小说数据集更多的是无监督的数据集。而中文文本分类数据集缺乏用于小说风格分类的数据集。即使是带有风格标签的小说文本，其标签也多是针对整个小说的。这样的标签不能准确包含风格信息，因为小说中的信息是混乱的。例如，在科幻小说中，也有人物之间的爱情故事，这样的情节和带有 "科幻小说 "标签的文本会给训练带来一些混乱。
+
+我们的原始文本数据来自腾讯人工智能实验室，其中包含25184个小说类别。通过融合相似类别和清洗，我们选择了4个高质量的类别作为我们的目标，它们是科幻、古典、军事和官方。其中，古典类具有较强的体裁属性，在融合了其他纯古典文学类文本后（https://github.com/NiuTrans/Classical-Modern），我们认为其特征边界已经比较明确。
+
+至于其他的，我们首先提取了每种小说文体数据中的前50个关键词。将目标文体数据中按关键词提取的文本与非目标数据中随机提取的文本混合，形成每种文体的10万个数据文本。然后，我们将这10万条数据交给专业的注释人员进行注释，每条数据都由他们判断是否是目标文体。
+
+最后，我们的数据不仅包括人工标注的结果，还包括原始的目标文体数据文本，以确保数据的稳健性。四种文体的数据数量大小及其分布见表ref{datasets}。我们的数据可以在以下网站公开获取 
+https://drive.google.com/file/d/1wKDxO4lBRLlo1Zj7IM6fzZ77zJ5yJoRz/view?usp=share_link.
