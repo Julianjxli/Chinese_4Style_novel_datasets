@@ -1,5 +1,5 @@
 # Chinese_4Style_novel_datasets
-## 概要
+## overview  概要
 Recent Chinese novel datasets are more often unsupervised datasets. And the chinese text classification dataset lacks a dataset for novel style classification. 
 Even for novel texts with style labels, the labels are more for the whole novel. 
 Such labels cannot accurately contain style information, because the information in a novel is messy. 
@@ -22,14 +22,25 @@ Finally, our data includes not only the manual annotation results, but also the 
 https://drive.google.com/file/d/1wKDxO4lBRLlo1Zj7IM6fzZ77zJ5yJoRz/view?usp=share_link.
 
 
-## 数据清洗
+## Data Details 数据细节
 
-### 清理思路
+### Cleaning steps 清理步骤
+1. Clean up the novel according to its categories and remove the categories that do not fit.
+2. Remove the text under the introduction and inappropriate tag symbols in the novel
+3. After the above finishing, the pornographic and dirty content is removed
+
 1. 根据小说类别进行清理，去除不适合的类别。
 2. 对小说中的介绍下文字以及不合适的标签符号进行去除
 3. 经过上述整理后，对色情脏话内容进行删除
 
-### 风格数据获取方法
+### Style data acquisition method 风格数据获取方法
+
+1. Obtain a preliminary style dataset based on the fusion of tag information
+2. extract keywords in the preliminary style text dataset
+3. each style extracts target style sentences in the preliminary style dataset according to keywords, and forms a manually annotated dataset with a total of 100,000 sentences of non-target style
+4. professional annotator to annotate the data
+5. extracting strong style text (meaning that the frequency of style keywords is large) and weak style text (the frequency of style keywords is 0) from the preliminary style text to form a relevant dataset together with the annotated data.
+
 1. 根据标签信息融合获取初步的风格数据集
 2. 在初步的风格文本数据集中抽取关键词
 3. 每个风格根据关键词在初步风格数据集中抽取目标风格句子，并与非目标风格的句子共计十万条组成人工标注的数据集
@@ -38,7 +49,14 @@ https://drive.google.com/file/d/1wKDxO4lBRLlo1Zj7IM6fzZ77zJ5yJoRz/view?usp=share
 
 ### 风格数据集的划分
 
-| Division | 科幻 | 古典 | 军事 | 官场 |
+| Division | SF | CL | MI | PO |
+|  ----  | ----  | ----  | ----  | ----  |
+| training  | 138,389 | 285,330 | 186,895 | 174,502 |
+| dev  | 5,000 | 5,000 | 5,000 | 5,000 |
+| test  | 2,000 | 2,000 | 2,000 | 2,000 |
+| proportion  | 45.49% | 51.28% | 52.78% | 54.90% |
+
+| 划分 | 科幻 | 古典 | 军事 | 官场 |
 |  ----  | ----  | ----  | ----  | ----  |
 | 训练集  | 138,389 | 285,330 | 186,895 | 174,502 |
 | 验证集  | 5,000 | 5,000 | 5,000 | 5,000 |
