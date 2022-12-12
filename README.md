@@ -39,7 +39,6 @@ https://drive.google.com/file/d/1wKDxO4lBRLlo1Zj7IM6fzZ77zJ5yJoRz/view?usp=share
 ### 风格数据集的划分
 
 | Division | 科幻 | 古典 | 军事 | 官场 |
-
 |  ----  | ----  | ----  | ----  | ----  |
 | 单元格  | 单元格 | 单元格 | 单元格 | 单元格 |
 | 单元格  | 单元格 | 单元格 | 单元格 | 单元格 |
