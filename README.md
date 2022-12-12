@@ -1,5 +1,5 @@
 # Chinese_4Style_novel_datasets
-## overview  概要
+## Overview  
 Recent Chinese novel datasets are more often unsupervised datasets. And the chinese text classification dataset lacks a dataset for novel style classification. 
 Even for novel texts with style labels, the labels are more for the whole novel. 
 Such labels cannot accurately contain style information, because the information in a novel is messy. 
