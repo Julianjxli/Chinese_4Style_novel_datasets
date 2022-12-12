@@ -25,27 +25,19 @@ https://drive.google.com/file/d/1wKDxO4lBRLlo1Zj7IM6fzZ77zJ5yJoRz/view?usp=share
 ## Data Details 数据细节
 
 ### Cleaning steps 清理步骤
-1. Clean up the novel according to its categories and remove the categories that do not fit.
-2. Remove the text under the introduction and inappropriate tag symbols in the novel
-3. After the above finishing, the pornographic and dirty content is removed
+1. Clean up the novel according to its categories and remove the categories that do not fit. 根据小说类别进行清理，去除不适合的类别。
+2. Remove the text under the introduction and inappropriate tag symbols in the novel.  对小说中的介绍下文字以及不合适的标签符号进行去除
+3. After the above finishing, the pornographic and dirty content is removed. 经过上述整理后，对色情脏话内容进行删除。
 
-1. 根据小说类别进行清理，去除不适合的类别。
-2. 对小说中的介绍下文字以及不合适的标签符号进行去除
-3. 经过上述整理后，对色情脏话内容进行删除
 
 ### Style data acquisition method 风格数据获取方法
 
-1. Obtain a preliminary style dataset based on the fusion of tag information
-2. extract keywords in the preliminary style text dataset
-3. each style extracts target style sentences in the preliminary style dataset according to keywords, and forms a manually annotated dataset with a total of 100,000 sentences of non-target style
-4. professional annotator to annotate the data
-5. extracting strong style text (meaning that the frequency of style keywords is large) and weak style text (the frequency of style keywords is 0) from the preliminary style text to form a relevant dataset together with the annotated data.
+1. Obtain a preliminary style dataset based on the fusion of tag information  根据标签信息融合获取初步的风格数据集
+2. extract keywords in the preliminary style text dataset  在初步的风格文本数据集中抽取关键词
+3. each style extracts target style sentences in the preliminary style dataset according to keywords, and forms a manually annotated dataset with a total of 100,000 sentences of non-target style  每个风格根据关键词在初步风格数据集中抽取目标风格句子，并与非目标风格的句子共计十万条组成人工标注的数据集
+4. professional annotator to annotate the data  专业标注人员对数据进行标注
+5. extracting strong style text (meaning that the frequency of style keywords is large) and weak style text (the frequency of style keywords is 0) from the preliminary style text to form a relevant dataset together with the annotated data.  在初步风格文本中抽取强风格的文本（指风格关键词词频较大）和弱风格文本（风格关键词词频为0）与标注数据共同组成相关数据集。
 
-1. 根据标签信息融合获取初步的风格数据集
-2. 在初步的风格文本数据集中抽取关键词
-3. 每个风格根据关键词在初步风格数据集中抽取目标风格句子，并与非目标风格的句子共计十万条组成人工标注的数据集
-4. 专业标注人员对数据进行标注
-5. 在初步风格文本中抽取强风格的文本（指风格关键词词频较大）和弱风格文本（风格关键词词频为0）与标注数据共同组成相关数据集。
 
 ### 风格数据集的划分
 
